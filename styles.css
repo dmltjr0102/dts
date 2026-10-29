@@ -1,0 +1,464 @@
+
+/* Basic styles for Enail&eyelash */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fffaf8;
+    color: #594347;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: #a65d70;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 35px;
+    background-color: white;
+    border-bottom: 1px solid #f0dce1;
+}
+
+.logo {
+    color: #b76e79;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.menu a {
+    color: #594347;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #f9e7eb;
+    color: #a65d70;
+}
+
+/* Home Page */
+
+.home {
+    min-height: 380px;
+    margin: 30px;
+    padding: 60px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9e7eb;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.home-content h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.home-button,
+.home-secondary-button,
+.about-contact-btn,
+.service-button,
+.services-contact-button,
+.contact-submit {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: #b76e79;
+    color: white;
+    border: 1px solid #b76e79;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.home-button:hover,
+.home-secondary-button:hover,
+.about-contact-btn:hover,
+.service-button:hover,
+.services-contact-button:hover,
+.contact-submit:hover {
+    background-color: #a65d70;
+}
+
+.home-welcome {
+    max-width: 700px;
+    margin: 45px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-welcome h2 {
+    font-size: 28px;
+}
+
+/* About Page */
+
+.about-content {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 38px;
+}
+
+.about-content h2 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.about-content p {
+    margin: 15px auto;
+    max-width: 750px;
+}
+
+/* Services Page */
+
+.services-intro {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.services-intro h1 {
+    font-size: 38px;
+}
+
+.services-container {
+    max-width: 1050px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #f0dce1;
+    border-radius: 5px;
+}
+
+.service-card h2 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.service-description {
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0dce1;
+}
+
+.service-item:last-of-type {
+    border-bottom: none;
+}
+
+.service-item .price {
+    color: #a65d70;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.service-note {
+    font-size: 13px;
+    color: #806d71;
+}
+
+/* Contact Page */
+
+.contact-intro {
+    max-width: 700px;
+    margin: 35px auto 20px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.contact-intro h1 {
+    font-size: 38px;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-card {
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #f0dce1;
+    border-radius: 5px;
+}
+
+.contact-form-card h2 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.form-description {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #e6cfd5;
+    border-radius: 4px;
+    background-color: #fffaf8;
+    color: #594347;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-submit {
+    width: 100%;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 13px;
+    color: #806d71;
+    margin-top: 18px;
+}
+
+/* Social Media Links */
+
+.about-socials {
+    margin: 25px auto;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #f0dce1;
+}
+
+.about-socials a {
+    color: #a65d70;
+    text-decoration: none;
+}
+
+.about-socials a:hover {
+    text-decoration: underline;
+}
+
+/* Closing Sections */
+
+.contact-closing,
+.services-closing {
+    margin-top: 30px;
+    padding: 30px 20px;
+    background-color: #f9e7eb;
+    text-align: center;
+}
+
+.contact-closing h2,
+.services-closing h2 {
+    margin-top: 0;
+}
+
+.contact-closing p,
+.services-closing p {
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+/* Gallery Page */
+
+.gallery-intro {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.gallery-intro h1 {
+    font-size: 38px;
+}
+
+.gallery-container {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+}
+
+/* Smaller Screens */
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 15px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .home {
+        margin: 15px;
+        padding: 35px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-welcome {
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .about-content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-item {
+        font-size: 14px;
+    }
+
+    .contact-intro,
+    .services-intro,
+    .gallery-intro {
+        margin: 25px auto;
+        padding: 10px 18px;
+    }
+
+    .contact-intro h1,
+    .services-intro h1,
+    .gallery-intro h1 {
+        font-size: 31px;
+    }
+
+    .contact-form-card {
+        padding: 20px;
+    }
+}
+
+
+/* Gallery Page */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: white;
+    border: 1px solid #f0dce1;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery-item p {
+    margin-bottom: 5px;
+    color: #a65d70;
+}
+
+.gallery-closing {
+    margin-top: 30px;
+    padding: 30px 20px;
+    background-color: #f9e7eb;
+    text-align: center;
+}
+
+.gallery-closing h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+    }
+
+    .gallery-item img {
+        height: 160px;
+    }
+}

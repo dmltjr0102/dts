@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Enail&eyelash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="logo">Enail&eyelash</a>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+
+    <!-- Contact Introduction -->
+    <section class="contact-intro">
+        <h1>Contact Us</h1>
+        <p>
+            Have a question about our services? Fill in the form below
+            and let us know how we can help.
+        </p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-container">
+        <div class="contact-form-card">
+
+            <h2>Send Us a Message</h2>
+
+            <p class="form-description">
+                Please enter your details and message below.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service of Interest</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>
+                            Select a service
+                        </option>
+                        <option value="manicure">Manicure</option>
+                        <option value="pedicure">Pedicure</option>
+                        <option value="eyelashes">Eyelash Treatment</option>
+                        <option value="other">Other Enquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Enter your message"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p class="form-note">
+                You can also contact us through Instagram or KakaoTalk.
+            </p>
+
+            <div class="about-socials">
+                <a href="https://www.instagram.com/enail_eyelash_nz/"
+                   target="_blank"
+                   rel="noopener noreferrer">Instagram</a>
+                <span>|</span>
+                <a href="https://open.kakao.com/me/enail_eyelash"
+                   target="_blank"
+                   rel="noopener noreferrer">KakaoTalk</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
